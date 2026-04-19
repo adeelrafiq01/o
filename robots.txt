@@ -1,0 +1,30 @@
+# robots.txt for https://ecomwithadeel.com/
+# Allows ALL crawlers and AI bots (search engines + AI training & search)
+
+User-agent: *
+Allow: /
+
+# Explicitly allow major AI crawlers (good practice even when using wildcard)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+# Sitemap reference
+Sitemap: https://ecomwithadeel.com/sitemap.xml
