@@ -12,8 +12,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com/" />
   <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
     rel="stylesheet" />
 
   <link rel="stylesheet" href="styles.css" />
@@ -56,17 +55,21 @@
       transform: translateY(-2px);
     }
   </style>
-<script defer src="_flock.js" data-proxy-url="/~api/analytics"></script></head>
+
+  <script defer src="_flock.js" data-proxy-url="/~api/analytics"></script>
 </head>
 
 <body>
 
+  <!-- HEADER -->
   <header class="site-header">
     <div class="container nav">
       <a href="index.html" class="brand">Ecom <span>With Adeel</span></a>
+
       <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
+
       <nav class="nav-links">
         <a href="index.html">Home</a>
         <a href="services.html">Services</a>
@@ -75,6 +78,7 @@
     </div>
   </header>
 
+  <!-- MAIN -->
   <main>
 
     <section class="page-hero">
@@ -92,20 +96,21 @@
       <div class="container">
         <div class="contact-grid">
 
+          <!-- INFO -->
           <div class="contact-info">
             <h3>Reach me directly</h3>
             <ul class="info-list">
               <li>
                 <span class="info-label">Email</span>
-                 <a href="mailto:adeelrafiq01@gmail.com" target="_blank" rel="noopener">adeelrafiq01@gmail.com</a>
+                <a href="mailto:adeelrafiq01@gmail.com">adeelrafiq01@gmail.com</a>
               </li>
-                <li>
-                  <span class="info-label">LinkedIn</span>
-                  <a href="https://pk.linkedin.com/in/adeel-rafiq-930a93195" target="_blank" rel="noopener">@adeel-rafiq</a>
-                </li>
+              <li>
+                <span class="info-label">LinkedIn</span>
+                <a href="https://pk.linkedin.com/in/adeel-rafiq-930a93195" target="_blank">@adeel-rafiq</a>
+              </li>
               <li>
                 <span class="info-label">Instagram</span>
-                <a href="https://www.instagram.com/ecomwithadeel/" target="_blank" rel="noopener">@ecomwithadeel</a>
+                <a href="https://www.instagram.com/ecomwithadeel/" target="_blank">@ecomwithadeel</a>
               </li>
               <li>
                 <span class="info-label">WhatsApp</span>
@@ -118,21 +123,21 @@
             </ul>
           </div>
 
-          <!-- NEW CONTACT BUTTONS -->
+          <!-- BUTTONS -->
           <div class="contact-actions">
             <h3>Contact Me</h3>
             <p>Choose your preferred way to reach out:</p>
 
             <a href="mailto:adeel@gmail.com" class="btn btn-primary">
-               Send Email
+              Send Email
             </a>
 
             <a href="https://www.instagram.com/ecomwithadeel/" target="_blank" class="btn btn-secondary">
-               Instagram
+              Instagram
             </a>
 
             <a href="https://wa.me/923030943229" target="_blank" class="btn btn-success">
-               WhatsApp
+              WhatsApp
             </a>
           </div>
 
@@ -142,6 +147,7 @@
 
   </main>
 
+  <!-- FOOTER -->
   <footer class="site-footer">
     <div class="container footer-inner">
       <div class="brand">Ecom <span>With Adeel</span></div>
@@ -149,9 +155,13 @@
     </div>
   </footer>
 
+  <!-- SCRIPTS -->
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
+
+  <!-- ✅ IMPORTANT: MENU TOGGLE SCRIPT -->
+  <script src="script.js"></script>
 
 </body>
 
