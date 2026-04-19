@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services — Ecom With Adeel</title>
+    <meta name="description" content="Amazon FBA Wholesale services by Adeel Rafiq: brand approvals, brand hunting, account management, sourcing and more." />
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  
+<style>
+	@font-face {
+		font-family: 'CameraPlainVariable';
+		src: url('https://cdn.gpteng.co/mcp-widgets/v1/fonts/CameraPlainVariable.woff2') format('woff2');
+		font-weight: 100 900;
+		font-style: normal;
+		font-display: swap;
+	}
+
+	#lovable-badge {
+		--badge-bg: #1b1b1b;
+		--badge-text: #c5c1b9;
+		--badge-text-hover: #dcdad5;
+		--badge-radius: 6px;
+		--badge-padding: 8px;
+		--badge-gap: 6px;
+		--badge-shadow: 
+			0 0 0 1px rgba(0, 0, 0, 0.88),
+			0 1px 0 0 rgba(0, 0, 0, 0.04),
+			0 2px 2px -1px rgba(0, 0, 0, 0.08),
+			0 4px 4px -2px rgba(0, 0, 0, 0.08),
+			0 8px 8px -4px rgba(0, 0, 0, 0.08),
+			0 16px 16px -8px rgba(0, 0, 0, 0.08);
+		--badge-transition-duration: 0.2s;
+		--badge-transition-easing: cubic-bezier(0.16, 1, 0.32, 1);
+		--focus-color: #575ECF;
+		--focus-offset: 2px;
+		--focus-width: 2px;
+		
+		position: fixed;
+		bottom: 12px;
+		right: 12px;
+		height: 24px;
+		display: flex;
+		align-items: center;
+		z-index: 1000000;
+		background-color: var(--badge-bg);
+		color: var(--badge-text);
+		border-radius: var(--badge-radius);
+		box-shadow: var(--badge-shadow);
+		font-size: 12px;
+		font-family: CameraPlainVariable, "CameraPlainVariable Fallback", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+		font-weight: 400 !important;
+		text-transform: none !important;
+		font-feature-settings: normal !important;
+		transform: translateZ(0);
+		will-change: transform, opacity;
+	}
+
+	#lovable-badge-cta {
+		display: flex;
+		align-items: center;
+		gap: var(--badge-gap);
+		padding: 0 var(--badge-padding);
+		height: 100%;
+		color: inherit;
+		text-decoration: none;
+		white-space: nowrap;
+		border-radius: var(--badge-radius) 0 0 var(--badge-radius);
+		transition: 
+			background-color var(--badge-transition-duration) ease,
+			color var(--badge-transition-duration) ease,
+			transform 0.1s ease;
+	}
+
+	#lovable-badge-cta:hover {
+		background: rgba(255, 255, 255, 0.04);
+		color: var(--badge-text-hover);
+	}
+
+	#lovable-badge-cta:active {
+		transform: scale(0.98);
+	}
+
+	#lovable-badge-cta:focus {
+		outline: none;
+	}
+
+	#lovable-badge-cta:focus-visible {
+		outline: var(--focus-width) solid var(--focus-color);
+		outline-offset: var(--focus-offset);
+		z-index: 1;
+	}
+
+	#lovable-badge-text {
+		line-height: 1;
+	}
+
+	#lovable-badge-divider {
+		width: 1px;
+		height: 24px;
+		background-color: rgba(255, 255, 255, 0.04);
+		flex-shrink: 0;
+	}
+
+	#lovable-badge-close {
+		width: 24px;
+		height: 24px;
+		min-width: 24px;
+		min-height: 24px;
+		cursor: pointer;
+		background: none;
+		border: none;
+		padding: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 0 var(--badge-radius) var(--badge-radius) 0;
+		flex-shrink: 0;
+		transition: 
+			background-color var(--badge-transition-duration) ease,
+			transform 0.1s ease;
+	}
+
+	#lovable-badge-close:hover {
+		background: rgba(255, 255, 255, 0.04);
+	}
+
+	#lovable-badge-close:active {
+		transform: scale(0.92);
+	}
+
+	#lovable-badge-close:focus {
+		outline: none;
+	}
+
+	#lovable-badge-close:focus-visible {
+		outline: var(--focus-width) solid var(--focus-color);
+		outline-offset: calc(var(--focus-offset) * -1);
+		z-index: 1;
+	}
+
+	#lovable-badge-close svg path {
+		fill: var(--badge-text);
+		transition: fill var(--badge-transition-duration) ease;
+	}
+
+	#lovable-badge-close:hover svg path {
+		fill: var(--badge-text-hover);
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		#lovable-badge-cta,
+		#lovable-badge-close,
+		#lovable-badge-close svg path {
+			transition: none;
+		}
+		
+		#lovable-badge-cta:active,
+		#lovable-badge-close:active {
+			transform: none;
+		}
+	}
+
+	@media (prefers-contrast: high) {
+		#lovable-badge {
+			--badge-bg: #000;
+			--badge-text: #fff;
+			--badge-text-hover: #fff;
+			border: 2px solid currentColor;
+		}
+		
+		#lovable-badge-cta:focus-visible,
+		#lovable-badge-close:focus-visible {
+			outline-width: 3px;
+		}
+	}
+</style>
+<script defer src="_flock.js" data-proxy-url="/~api/analytics"></script><meta property="og:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/fae7753c-17cd-499f-b82b-99413ed890e4/id-preview-899321cb--6b5b52bc-491e-41ea-973a-f0aa51f87399.lovable.app-1776618487495.png"><meta name="twitter:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/fae7753c-17cd-499f-b82b-99413ed890e4/id-preview-899321cb--6b5b52bc-491e-41ea-973a-f0aa51f87399.lovable.app-1776618487495.png"></head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a href="index.html" class="brand">Ecom <span>With Adeel</span></a>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="services.html" class="active">Services</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <span class="eyebrow">What I Offer</span>
+          <h1>Services</h1>
+          <p class="lead">
+            Everything you need to launch, grow and protect a profitable
+            Amazon FBA Wholesale business — handled by one experienced consultant.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="services-grid">
+
+            <article class="service-card">
+              <div class="service-icon">🛡️</div>
+              <h3>Amazon Brand Approvals</h3>
+              <p>Secure ungating and brand approvals across categories so you can sell the brands that actually move.</p>
+            </article>
+
+            <article class="service-card">
+              <div class="service-icon">🔎</div>
+              <h3>High-ROI Brand Hunting</h3>
+              <p>Data-driven research to find profitable, low-competition brands worth pursuing for your wholesale account.</p>
+            </article>
+
+            <article class="service-card">
+              <div class="service-icon">📦</div>
+              <h3>Product Sourcing</h3>
+              <p>Source winning products from authorized distributors and brand owners with healthy margins.</p>
+            </article>
+
+            <article class="service-card">
+              <div class="service-icon">🤝</div>
+              <h3>Supplier &amp; Distributor Outreach</h3>
+              <p>Professional outreach scripts and follow-ups to open accounts with real US &amp; UK distributors.</p>
+            </article>
+
+            <article class="service-card">
+              <div class="service-icon">⚙️</div>
+              <h3>Account Management</h3>
+              <p>Day-to-day Seller Central management: listings, inventory, reorders, cases and account health.</p>
+            </article>
+
+            <article class="service-card">
+              <div class="service-icon">📈</div>
+              <h3>FBA Wholesale Scaling</h3>
+              <p>Clear playbooks to scale your wholesale store sustainably without burning capital or risking suspensions.</p>
+            </article>
+
+            <article class="service-card">
+              <div class="service-icon">🧭</div>
+              <h3>1-on-1 Consultation</h3>
+              <p>Personal calls to audit your account, fix bottlenecks, and map a 30/60/90-day growth plan.</p>
+            </article>
+
+            <article class="service-card">
+              <div class="service-icon">🎓</div>
+              <h3>Mentorship for New Sellers</h3>
+              <p>Guided onboarding for beginners — from store setup to first profitable wholesale order.</p>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-band">
+        <div class="container cta-inner">
+          <div>
+            <h2>Not sure which service fits you?</h2>
+            <p>Tell me about your store and I'll recommend the right next step.</p>
+          </div>
+          <a href="contact.html" class="btn btn-primary btn-lg">Talk to Adeel</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="brand">Ecom <span>With Adeel</span></div>
+        <p>© <span id="year"></span> Adeel Rafiq. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  
+</body>
+
+</html>
